@@ -1,0 +1,51 @@
+/* font-family: 'Archivo Black', sans-serif;
+font-family: 'Bitter', serif;
+font-family: 'Geologica', sans-serif; */
+
+* {
+  padding: 20;
+  margin: 20;
+  margin-left: 25px;
+  box-sizing: border-box;
+  letter-spacing: 0.03em;
+}
+
+body {
+  min-width: 320px;
+  font-family: "Bitter", serif;
+}
+
+header {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  background-color: salmon;
+  background-image: linear-gradient(
+    135deg,
+    salmon 0%,
+    rgba(250, 128, 114, 0.658) 46%,
+    white 100%
+  );
+  letter-spacing: 0.5rem;
+}
+
+h1 {
+  font-size: small;
+  font-family: "Geologica", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 2em;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 37px;
+  color: #015c63;
+}
+
+h3 {
+  font-size: 28px;
+}

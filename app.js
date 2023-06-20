@@ -48,6 +48,8 @@ const seattleShop = {
     this.calcCustomersPerHour();
     this.calcCookiesPerHour();
 
+    const containerElement = document.getElementById("container");
+
     const article = document.createElement("article");
     container.appendChild(article);
 

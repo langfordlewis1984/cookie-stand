@@ -101,11 +101,6 @@ section {
   margin-bottom: 2rem;
 }
 
-section .hero-section {
-  width: 100%;
-  background-color: white;
-}
-
 section:last-of-type {
   margin-bottom: 0;
 }

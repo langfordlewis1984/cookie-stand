@@ -3,6 +3,8 @@ console.log("salmon cookies");
 
 const container = document.getElementById("container");
 
+const addStoreForm = document.getElementById("addStoreForm");
+
 const hours = [
   "6am",
   "7am",
@@ -98,3 +100,20 @@ const tokyo = new Store("Tokyo", 3, 24, 1.2);
 const dubia = new Store("Dubia", 11, 38, 3.7);
 const paris = new Store("Paris", 20, 38, 2.3);
 const lima = new Store("Lima", 2, 16, 4.6);
+
+addStoreForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+  // console.log(event);
+  const name = event.target.storeName.value;
+  const minCustomers = event.target.minCustomers.value;
+  const maxCustomers = event.target.maxCustomers.value;
+  const avgCookiesPerCustomer = event.target.avgCookiesPerCustomer.value;
+
+  const newStore = new Store(
+    name,
+    minCustomers,
+    maxCustomers,
+    avgCookiesPerCustomer
+  );
+  addStoreForm.reset();
+});
